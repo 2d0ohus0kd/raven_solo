@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--I'm utilizing a the w3 schools CSS page for this hand-in. Source: https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm#packages-->
+<head>
+  <title>Iterative Design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Nunito", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+  </style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;color: white; background-color: #807691" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Iterative <br>Design</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Raven</a>
+    <a href="#interface" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Initial Sketches</a>
+    <a href="#observations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Wireframe from Combined Ideas</a>
+    <a href="#interview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Interactive Hi-Fi Mockup and Feedback</a>
+    <a href="#personas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">User Testing Results & Analysis</a>
+    <a href="#storyboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Startup</a>
+    <a href="#conclusion" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Conclusion</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Responsive Redesign</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xxlarge" style="margin-bottom:90px"><b>Designing an Interactive Interface for Raven</b>
+    </h1>
+    <h1 class="w3-large" style="color: black"><b>In this assignment we were tasked with designing an interface for a startup of choice, gathering feedback from users and iterating over our design accordingly. We chose to design an interactive interface for Raven, an emerging startup to manage notifications across SMS, Email, Push, Slack, WA & more. We went through the iterative design process to make a mock up of a solution to the Raven's concept.
+    </b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <div class="w3-center">
+      <img src="https://i.postimg.cc/90CR12HD/Screen-Shot-2022-11-08-at-9-58-30-PM.png" style="width:50%" onclick="onClick(this)" alt="raven background">
+    </div>
+    <p>
+      Raven is a B2B product notification manager allowing businesses to monitor the performance of their notifications across channels (e.g. SMS, Email, WhatsApp, etc.) and streamline the notification sending process. Raven was part of Y Combinator’s S22 batch.
+    </p>
+    <p>For a more in-depth description of the startup, feel free to browse Raven's Y-Combinator page <a href="https://www.ycombinator.com/launches/H2f-raven-a-single-api-for-product-notifications-across-sms-email-push-whatsapp-slack-more">here</a>.</p>
+  </div>
+
+  <!-- INTERFACE -->
+  <div class="w3-container" id="interface" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Initial Sketches.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+  </div>
+  <div class="w3-row-padding">
+    <p>Each group member made a set of 3 sketch brainstorms for our interface. The following are the four sets of initial sketches we have. We each attempted to explore different design alternatives, with variance in layout hierarchies, list formats, charts. We also experimented with which pages should make up the most important part of the solution: for example, one of our sets included an API documentation page.
+    </p>
+    <h5>Sketch Set A:</h5>
+    <div class="w3-third">
+      <img src="assets/sam-1.jpg" style="width:100%; height: 200px">
+    </div>
+    <div class="w3-third">
+      <img src="assets/sam-2.jpg" style="width:100%; height: 200px">
+    </div>
+    <div class="w3-third">
+      <img src="assets/sam-3.jpg" style="width:100%; height: 200px">
+    </div>
+  </div>
+  <div class="w3-row-padding">
+  <h5>Sketch Set B:</h5>
+    <div class="w3-third">
+      <img src="assets/mai-1.jpg" style="width:100%; height: 200px">
+    </div>
+    <div class="w3-third">
+      <img src="assets/mai-2.png" style="width:100%; height: 200px">
+    </div>
+    <div class="w3-third">
+      <img src="assets/mai-2:3.jpg" style="width:100%; height: 200px">
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+  <h5>Sketch Set C:</h5>
+    <div class="w3-third">
+      <img src="assets/ben-1.jpg" style="width:100%; height: 200px">
+    </div>
+    <div class="w3-third">
+      <img src="assets/ben-2.jpg" style="width:100%; height: 200px">
+    </div>
+    <div class="w3-third">
+      <img src="assets/ben-3.jpg" style="width:100%; height: 200px">
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+  <h5>Sketch Set D:</h5>
+    <div class="w3-third">
+      <img src="assets/amit-1.jpg" style="width:100%; height: 200px">
+    </div>
+    <div class="w3-third">
+      <img src="assets/amit-2.jpg" style="width:100%; height: 200px">
+    </div>
+    <div class="w3-third">
+      <img src="assets/amit-3.jpg" style="width:100%; height: 200px">
+    </div>
+  </div>
+
+  <!-- OBSERVATIONS -->
+  <div class="w3-container" id="observations" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Wireframes.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+  </div>
+  <p>Below are the lo-fi prototypes our team made for each screen necessary for the Raven web application.</p>
+
+  <div class="w3-half" style="padding-right: 10px; padding-bottom: 45px">
+    <h3 style="font-weight: bolder"><b>Dashboard</b></h3>
+    <img src="assets/1-Dashboard.png" style="width:100%; border:3px solid #807691; height:332px">
+  </div>
+  <div class="w3-half" style="padding-right: 10px; padding-bottom: 45px">
+    <h3 style="font-weight: bolder"><b>Manage Notifications</b></h3>
+    <img src="assets/2%20-%20Manage%20Notifications.png" style="width:100%; border:3px solid #807691; height:332px">
+  </div>
+  <div class="w3-half" style="padding-right: 10px; padding-bottom: 45px">
+    <h3 style="font-weight: bolder"><b>Create Notification</b></h3>
+    <img src="assets/3%20-%20Create%20Notification.png" style="width:100%; height:332px; border:3px solid #807691">
+  </div>
+  <div class="w3-half" style="padding-right: 10px; padding-bottom: 45px">
+    <h3 style="font-weight: bolder"><b>Send</b></h3>
+    <img src="assets/4%20-%20Send%20.png" style="width:100%; border:3px solid #807691; height:332px">
+  </div>
+  <div class="w3-half" style="padding-right: 10px; padding-bottom: 45px">
+    <h3 style="font-weight: bolder"><b>Manage Channels</b></h3>
+    <img src="assets/5%20-%20Manage%20Channels.png" style="width:100%; border:3px solid #807691; height:332px">
+  </div>
+  <div class="w3-half" style="padding-right: 10px; padding-bottom: 45px">
+    <h3 style="font-weight: bolder"><b>Manage Templates</b></h3>
+    <img src="assets/6%20-%20Manage%20Templates.png" style="width:100%; border:3px solid #807691; height:332px">
+  </div>
+
+
+
+  <!-- INTERVIEW -->
+  <div class="w3-container" id="interview" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Interactive Hi-Fi Mockup and Feedback.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+  </div>
+  <p>*Hover and scroll over the screen or press the full screen button on the right to interact with the prototype*</p>
+  <p>If the Figma prototype does not load below, then access it <a href="https://www.figma.com/proto/hlt2jHejastnBFLiCf8cIi/Raven-Anonymous-Prototype?node-id=1%3A2617&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2284" target="_blank">here</a>.</p>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fhlt2jHejastnBFLiCf8cIi%2FRaven-Anonymous-Prototype%3Fnode-id%3D1%253A2617%26starting-point-node-id%3D1%253A2617%26scaling%3Dcontain" allowfullscreen></iframe>
+  <h3><b>Feedback from Critique Studio:</b></h3>
+  <p>Below is a bulleted summary of the feedback we received during the critique session. We wrote this list down in real time, and organized it into the pages it fits under. Some of the most glaring feedback points were directed towards the Send Notifications process, which we found reasonable as sending notifications is the primary task of our interface. We also received other feedback noting that the design of the Manage Templates page was inconsistent with the rest of our design choices, and that the Preferred Channels interface could be improved as well.</p>
+  <h5><b>Create New Notifications (under Send Notification process):</b></h5>
+  <ul>
+    <li>Fix input field for ‘Recipient’</li>
+    <li>Make drop-down menu interactive</li>
+    <li>Make ‘Next’ button lead to the next page (or get rid of it and preserve the 2 radio buttons)</li>
+    <li>Make date picker functional</li>
+  </ul>
+  <h5><b>Select Preferred Channels:</b></h5>
+  <ul>
+    <li>Change ‘Next’ to ‘Send’</li>
+    <li>Add a ‘Sent successfully’ popup indicating the task is complete</li>
+  </ul>
+  <h5><b>Dashboard:</b></h5>
+  <ul>
+    <li>Label axes</li>
+    <li>Increase the readability of the chart: labeling the delivery metrics</li>
+  </ul>
+  <h5><b>Manage Templates:</b></h5>
+  <ul>
+    <li>Users in the critique section noted that the design of our interface on this page was inconsistent with the rest of our UI</li>
+    <li>Make design more consistent with existing pages</li>
+  </ul>
+
+
+
+  <!-- PERSONAS -->
+  <div class="w3-container" id="personas" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>User Testing.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <h3 style="font-weight: bolder">Instructions for Users</h3>
+    <p>"Hello and thank you for participating in this user test! Before starting, we’d like to note that we are testing an interactive mockup, rather than an actual website. For some context before conducting the test, below is a brief description of the product:</p>
+    <p>Raven is a B2B product notification manager allowing businesses to monitor the performance of their notifications across channels (e.g. SMS, Email, WhatsApp, etc.) and streamline the notification sending process.</p>
+    <p>Imagine you work on the marketing team of a medium to large B2C business. The task we would like you to perform with our mockup is sending a notification. Since we’d like to measure how intuitive this task would be for a user, we’ll keep the required steps vague to see if you are able to figure out how to complete the task. We encourage you to think aloud as you perform the task to better note your thought process."</p>
+    <h5><b>Subtasks:</b></h5>
+    <ul>
+      <li>Navigate to the send notifications page</li>
+      <li>Create a notification</li>
+      <li>Configure the channels you want to send the notification to and the providers you’d like to send the notifications through,</li>
+    </ul>
+    <h3 style="font-weight: bolder">Post-test Questions for Users</h3>
+    <ol>
+      <li>On a scale of 1-5, with 5 representing the highest possible score, how intuitive was navigating to the “Send Notification” page? Feel free to elaborate on your score.</li>
+      <li>On a scale of 1-5, with 5 representing the highest possible score, how intuitive was creating a new notification? Feel free to elaborate on your score.</li>
+      <li>On a scale of 1-5, with 5 representing the highest possible score, how intuitive was selecting channels and sending a notification after creating the notification? Feel free to elaborate on your score.</li>
+      <li>Aside from the aforementioned steps, did you have any other specific difficulties sending a notification?</li>
+      <li>On a scale of 1-5, with 5 representing the highest possible score, how well-designed was the interface overall?
+      </li>
+    </ol>
+    <h3 style="font-weight: bolder">Results and Analysis</h3>
+    <a href="https://app.usertesting.com/v/177b1788-3a69-415f-9e1f-1c38b5880366?encrypted_video_handle=8085e915-213c-40c8-8331-ae24f7bf4423#!/notes" target="_blank">Video 1</a>
+    <br>
+    <a href="https://app.usertesting.com/v/c58d254a-c18d-44ec-bbd2-5f2aafe63251?encrypted_video_handle=28cd8b2d-34bc-4020-9551-d906b26950a0#!/notes" target="_blank">Video 2</a>
+    <br>
+    <a href="https://app.usertesting.com/v/bf47ca8f-e66a-4b67-8945-956236266678?encrypted_video_handle=df72b9a1-1cd5-49d0-9fb9-c61a18c8ad96#!/notes" target="_blank">Video 3</a>
+    <p>In our UserTesting, we assigned the task of sending a notification, with the subtasks of navigating to the ‘send notifications’ page, creating a notification and configuring the channels.</p>
+    <p>Our users encountered the following errors: when creating a notification, our date picker did not collapse when users selected a date, and users were unable to select a year. Additionally, while users could type into our input fields, deletion did not work. Nevertheless, all three of our testers successfully completed our task and subtasks, and expressed enthusiasm about our interface, with one user stating he “would definitely use it if [his] company needed a product like this.” All users indicated the interface was easy to learn and use, and praised the decision to assign a distinct color to the ‘send a notification’ button.</p>
+    <p>As for our post-test questions, despite submitting them on UserTesting.com our users did not receive these questions for review, but responded to questions prompted by the platform.</p>
+    <p>We used this feedback to improve our product by fixing the date picker, and recognize the need to resolve the input field bug as well.</p>
+  </div>
+
+  <!-- STORYBOARD -->
+  <div class="w3-container" id="storyboard" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Contact Startup.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <p>We contacted Raven to ask for feedback and insight. We're looking forward to their response!</p>
+  </div>
+  <div style="justify-content: center">
+    <img src="assets/raven_outreach_anonymized_iterative_design.png" style="width:70%" onclick="onClick(this)" alt="Persona1">
+  </div>
+
+  <!-- CONCLUSION -->
+  <div class="w3-container" id="conclusion" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Conclusion.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <p>In this assignment we learned the value of iterating over our design and incorporating user feedback into iterations of a product. We particularly benefited from observing screen recordings of users performing critical tasks to inform learnability and usability of our design and identify areas for improvement.</p>
+  </div>
+</div>
+  <!-- End page content -->
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+</script>
+
+
+</body>
+
+
+</html>
